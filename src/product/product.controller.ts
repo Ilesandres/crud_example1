@@ -37,4 +37,11 @@ export class ProductController {
             throw error;
         }
     }
+
+    @Get('/hola_mundo')
+    holaMundo():Promise<string>{
+        return new Promise((resolve)=>{
+            resolve('Hola Mundo');
+        });
+    }
 }
