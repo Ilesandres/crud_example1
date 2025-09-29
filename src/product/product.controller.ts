@@ -41,7 +41,7 @@ export class ProductController {
     @Get('/hola_mundo')
     holaMundo():Promise<string>{
         return new Promise((resolve)=>{
-            console.log('hola mundo desde endpoint');
+            
             resolve('Hola Mundo');
         });
     }
